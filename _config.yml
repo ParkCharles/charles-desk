@@ -1,15 +1,7 @@
 # GitHub Pages 설정
 title: "Charles' Desk"
 description: "AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간. MIT NANDA 보고서, 에이전트 아키텍처, 생성형 AI 분석"
-theme: jekyll-theme-minima
-
-# 선택 가능한 다른 테마들:
-# theme: jekyll-theme-cayman
-# theme: jekyll-theme-minimal
-# theme: jekyll-theme-slate
-# theme: jekyll-theme-architect
-# theme: jekyll-theme-dinky
-# theme: jekyll-theme-tactile
+theme: jekyll-theme-chirpy
 
 lang: ko-KR
 
@@ -18,11 +10,14 @@ url: "https://parkcharles.github.io/charles-desk"
 baseurl: "/charles-desk"
 repository: "ParkCharles/charles-desk"
 
+# 작성자 정보
+author:
+  name: Charles
+  email: # 이메일을 추가하려면 여기를 수정하세요
+
 # 소셜 미디어 및 연락처
-author: Charles
 twitter_username: # 트위터 계정을 추가하려면 여기를 수정하세요
 github_username: # GitHub 계정을 추가하려면 여기를 수정하세요
-email: # 이메일을 추가하려면 여기를 수정하세요
 
 # SEO 및 메타정보
 tagline: "AI & Tech Curation by Charles"
@@ -31,11 +26,13 @@ keywords: "AI, 기술, 생성형AI, 에이전트, 큐레이션, 분석, 번역"
 # Google Analytics (선택사항 - 추가하려면 주석 제거)
 # google_analytics: UA-XXXXXXX-XX
 
-# 사이트맵 및 피드
+# 플러그인
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate-v2
 
 # 피드 설정
 feed:
@@ -65,3 +62,25 @@ paginate_path: "/blog/page:num/"
 # 언어 및 지역 설정
 date_format: "%Y년 %m월 %d일"
 timezone: Asia/Seoul
+
+# Chirpy 테마 설정
+theme_mode: light # light, dark, auto
+
+# Archives 설정
+archives:
+  layouts:
+    - archives
+  permalinks:
+    year: /posts/:year/
+    month: /posts/:year/:month/
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# 페이지네이션 (jekyll-paginate-v2 설정)
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - Page :num'
+  sort_field: 'date'
+  sort_reverse: true
