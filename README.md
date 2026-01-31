@@ -4,88 +4,155 @@
 
 AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 개인 큐레이션 프로젝트입니다.
 
-## 🌐 Visit the Website
-
-**📍 Website:** https://[username].github.io/charles-desk
-
-_(GitHub 저장소를 연결하고 Pages를 활성화하면 위 URL에서 사이트에 접속할 수 있습니다)_
+**📍 Website:** https://parkcharles.github.io/charles-desk/
 
 ---
 
-## 📦 Project Structure
+## 📝 글 작성 & 업로드 (매번 참고하세요!)
 
-```
-charles-desk/
-├── index.md                                 # 메인 홈페이지
-├── reports.md                               # 📊 Reports & Analysis
-├── technical-analysis.md                    # 🛠️ Technical Deep Dives
-├── curations.md                             # 📌 Curations & Insights
-├── about.md                                 # 🤝 About
-├── State_of_AI_in_Business_2025_Report.md  # Featured Report
-├── Swarm_Orchestration_Skill.md            # Technical Article
-├── Ocean_Business.md                        # Industry Analysis
-├── _config.yml                              # Jekyll 설정
-├── _includes/                               # 공통 컴포넌트
-│   ├── navigation.html
-│   └── footer.html
-├── _layouts/                                # 레이아웃 템플릿
-│   └── default.html
-└── README.md                                # 이 파일
-```
+### 3단계로 글을 자동 게시합니다
 
-## 🚀 GitHub Pages 활성화 (5분)
+#### **Step 1️⃣: 글 작성**
 
-이 프로젝트는 **Jekyll**을 사용하여 자동으로 정적 사이트로 빌드됩니다.
+`_templates/post-template.md` 또는 `POSTING-GUIDE.md`를 참고하여 글을 작성합니다.
 
-### Step 1: GitHub에 푸시
-```bash
-git add .
-git commit -m "Update: Site structure and configuration"
-git push origin main
-```
-
-### Step 2: GitHub Pages 설정
-1. GitHub 저장소의 **Settings** 탭 이동
-2. 왼쪽 메뉴에서 **Pages** 선택
-3. **Source** 섹션에서:
-   - Branch: `main` 선택
-   - Folder: `/ (root)` 선택
-4. **Save** 클릭
-
-### Step 3: 배포 확인
-- GitHub Actions가 자동으로 빌드를 시작합니다 (1-2분)
-- "Actions" 탭에서 배포 상태를 확인할 수 있습니다
-- 배포 완료 후 `https://[username].github.io/charles-desk` 에서 사이트 확인
-
+```markdown
+---
+layout: post
+title: "글의 제목"
+date: 2025-02-15
+categories: [Reports]
+toc: true
 ---
 
-## 📚 Content Categories
+# 글의 제목
 
-| 섹션 | 설명 |
-|------|------|
-| **📊 Reports** | 기업 AI 도입 현황, 시장 분석, 종합 보고서 |
-| **🛠️ Technical** | AI 에이전트, 아키텍처, 기술 스택 분석 |
-| **📌 Curations** | 주간 큐레이션, 개인 관찰, 인사이트 |
-| **🤝 About** | 프로젝트 및 큐레이터 정보 |
+내용을 여기에 작성합니다...
+```
 
-## 📝 Featured Content
+#### **Step 2️⃣: 파일 저장**
 
-### 🔥 [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md)
-- **출처:** MIT Project NANDA
-- **핵심:** 300-400억 달러 투자에도 불구하고 95% 조직이 제로 수익
-- **대상:** 기업의 생성형 AI 도입 현황 분석
+파일명을 `YYYY-MM-DD-제목.md` 형식으로 저장합니다.
 
-### 🤖 [Swarm Orchestration Skill](Swarm_Orchestration_Skill.md)
-- 여러 AI 에이전트 조율 기술 심층 가이드
+```
+_posts/2025-02-15-my-article.md
+```
 
----
+**파일명 규칙:**
+- 영문 소문자와 하이픈만 사용
+- 공백과 한글 사용 금지
+- 예: `2025-02-15-ai-trends.md` ✅ | `2025-02-15-AI트렌드.md` ❌
 
-## 🛠️ Local Development
-
-### 로컬에서 사이트 테스트하기 (선택사항)
+#### **Step 3️⃣: Git 커밋 & 푸시**
 
 ```bash
-# Jekyll 설치 (Mac/Linux)
+git add _posts/
+git commit -m "Add: 글의 제목"
+git push origin master
+```
+
+**완료!** 자동으로 사이트에 반영됩니다. (1-2분 소요)
+
+---
+
+## ✅ 글 작성 체크리스트
+
+새 글을 `_posts/`에 넣기 전에 확인하세요:
+
+- [ ] 파일명이 `YYYY-MM-DD-제목.md` 형식인가?
+- [ ] Front Matter가 있는가? (layout, title, date, categories)
+- [ ] `#` 제목이 하나만 있는가?
+- [ ] 문단이 3~4줄을 넘지 않는가?
+- [ ] 요약 섹션이 있는가?
+
+**더 자세한 가이드:** [POSTING-GUIDE.md](POSTING-GUIDE.md) | [guideline.md](guideline.md)
+
+---
+
+## 📂 폴더 구조
+
+```
+_posts/                          # ← 여기에 글을 저장합니다!
+├── 2025-02-01-getting-started.md
+└── 2025-02-15-my-article.md
+
+_templates/
+└── post-template.md             # 글 작성 템플릿
+
+_layouts/
+├── default.html                 # 기본 레이아웃
+└── post.html                    # 블로그 글 레이아웃
+
+_includes/
+├── navigation.html              # 네비게이션 메뉴
+└── footer.html                  # 푸터
+
+guideline.md                      # 작성 가이드라인
+POSTING-GUIDE.md                 # 게시 자동화 설명서
+_config.yml                       # 사이트 설정
+```
+
+---
+
+## 🎯 카테고리 선택
+
+글을 작성할 때 아래 중 하나를 선택합니다:
+
+```yaml
+categories: [Reports]       # 기업 AI 도입, 시장 분석, 종합 보고서
+categories: [Technical]     # AI 에이전트, 아키텍처, 기술 스택
+categories: [Curations]     # 주간 큐레이션, 개인 관찰, 인사이트
+categories: [Analysis]      # 심층 분석
+categories: [Translation]   # 번역 자료
+```
+
+---
+
+## ⚙️ 자동화 기능
+
+`_posts/` 폴더에 글을 추가하면 다음이 자동으로 처리됩니다:
+
+✅ **레이아웃 자동 적용** - `_layouts/post.html` 사용
+✅ **메타정보 표시** - 날짜, 카테고리 자동 추가
+✅ **RSS 피드** - 피드에 자동 포함
+✅ **사이트맵** - 검색 엔진 최적화
+✅ **SEO 태그** - 소셜 공유 최적화
+
+---
+
+## 🌐 웹사이트
+
+### 주요 페이지
+
+| 페이지 | 설명 |
+|--------|------|
+| [Home](index.md) | 메인 홈페이지 |
+| [Reports](reports.md) | 📊 기업 AI 도입 현황, 시장 분석 |
+| [Technical](technical-analysis.md) | 🛠️ AI 에이전트, 아키텍처 분석 |
+| [Curations](curations.md) | 📌 주간 큐레이션, 인사이트 |
+| [About](about.md) | 🤝 프로젝트 및 큐레이터 정보 |
+
+### 주요 콘텐츠
+
+- [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md) - MIT Project NANDA
+- [Swarm Orchestration Skill](Swarm_Orchestration_Skill.md) - AI 에이전트 조율 기술
+
+---
+
+## 📚 더 알아보기
+
+- **작성 가이드:** [guideline.md](guideline.md) - 작성 원칙과 규칙
+- **게시 가이드:** [POSTING-GUIDE.md](POSTING-GUIDE.md) - 자동 게시 시스템 설명
+- **글 템플릿:** `_templates/post-template.md` - 글 작성 템플릿
+
+---
+
+## 🛠️ 로컬 개발 (선택사항)
+
+로컬에서 사이트를 테스트하려면:
+
+```bash
+# Jekyll 설치
 gem install bundler jekyll
 
 # 로컬 서버 실행
@@ -98,52 +165,23 @@ jekyll serve
 
 ---
 
-## 🎯 Configuration
+## 💡 팁
 
-### 소셜 미디어 링크 추가
-`_config.yml` 파일에서 다음을 수정하세요:
+### 글이 빨리 반영되지 않으면?
+1. 브라우저 캐시 삭제: `Ctrl+Shift+Delete`
+2. 몇 분 기다리기 (GitHub Pages 업데이트에 1-2분 소요)
+3. [GitHub Actions](https://github.com/ParkCharles/charles-desk/actions) 확인
 
+### 글을 수정하고 싶으면?
+1. 파일 수정
+2. `git add _posts/` → `git commit` → `git push`
+3. 자동 업데이트됨
+
+### 글을 임시로 숨기고 싶으면?
+Front Matter에 추가:
 ```yaml
-author: Charles
-twitter_username: your_twitter_handle
-github_username: your_github_username
-email: your_email@example.com
+published: false
 ```
-
-### 사이트 URL 업데이트
-```yaml
-url: "https://your-github-username.github.io/charles-desk"
-repository: "your-github-username/charles-desk"
-```
-
----
-
-## 💡 Contributing
-
-이 프로젝트는 개인 큐레이션 프로젝트이지만, 다음과 같은 기여를 환영합니다:
-
-- 🔍 **오탈자 신고** - Issues 또는 Pull Request
-- 💬 **개선 제안** - Issues를 통해 피드백
-- 🔗 **링크 수정** - 사용 중단된 링크 업데이트
-
-### 기여하기
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
----
-
-## 📖 Recommended Reading Order
-
-신규 방문자를 위한 추천 읽기 순서:
-
-1. **[Home Page](index.md)** - 프로젝트 개요
-2. **[About](about.md)** - 큐레이터와 프로젝트 정보
-3. **[Featured Report](State_of_AI_in_Business_2025_Report.md)** - 메인 콘텐츠
-4. **[Reports](reports.md)** - 더 많은 분석 자료
-5. **[Technical Deep Dives](technical-analysis.md)** - 기술 상세 분석
 
 ---
 
@@ -164,4 +202,4 @@ repository: "your-github-username/charles-desk"
 
 ---
 
-**Curated by Charles** | Updated: 2025년 1월 31일
+**Curated by Charles** | 마지막 업데이트: 2025년 2월 1일
