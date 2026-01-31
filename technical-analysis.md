@@ -1,15 +1,15 @@
 ---
 layout: default
-title: 🛠️ Technical Analysis - Charles' Desk
+title: 🛠️ Technical
 ---
 
-# 🛠️ Technical Analysis & Deep Dives
+# 🛠️ Technical
 
-AI 에이전트, 아키텍처, 기술 스택 등 기술적 주제에 대한 심층 분석과 설명입니다.
+트렌디한 기술 이야기와 깊이 있는 기술 분석을 공유합니다.
 
 ---
 
-## 🤖 AI & Agents
+## 🤖 Latest
 
 ### [Swarm Orchestration Skill - AI 에이전트 조율 기술](_posts/2025-01-20-swarm-orchestration-skill.md)
 
@@ -21,20 +21,8 @@ AI 에이전트, 아키텍처, 기술 스택 등 기술적 주제에 대한 심�
 - 💬 에이전트 통신 프로토콜
 - ⚡ 성능 최적화 기법
 
-**읽기 시간:** 약 15분
-
 [📖 전체 내용 읽기 →](/charles-desk/posts/2025/01/20/swarm-orchestration-skill/)
 
 ---
 
-## 🔖 Coming Soon
-
-- 📚 LLM 아키텍처 비교 분석
-- 🔐 AI 시스템 보안 패턴
-- 📈 벡터 데이터베이스 최적화
-- 🚀 RAG(Retrieval-Augmented Generation) 심층 가이드
-- 🎓 머신러닝 모니터링 모범 사례
-
----
-
-[← 메인으로 돌아가기](index.md)
+[← 홈으로 돌아가기](index.md)

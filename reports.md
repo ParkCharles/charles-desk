@@ -1,15 +1,15 @@
 ---
 layout: default
-title: 📊 Reports - Charles' Desk
+title: 📊 Reports
 ---
 
-# 📊 Reports & Analysis
+# 📊 Reports
 
-기업 내 AI 도입 현황, 시장 분석, 종합 보고서 등 깊이 있는 연구와 분석 자료들입니다.
+정성스럽게 작성된 보고서와 시장 분석, 심층 연구를 한국어로 공유합니다.
 
 ---
 
-## 📈 Featured Reports
+## 📈 Featured
 
 ### [2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)
 
@@ -24,21 +24,8 @@ title: 📊 Reports - Charles' Desk
 - 🤖 에이전틱 시스템의 부상
 - 👥 AI의 고용 영향 분석
 
-**출처:** MIT Project NANDA | **번역 및 편집:** Charles, 2025년 1월
-
-**읽기 시간:** 약 30분
-
 [📖 전체 보고서 읽기 →](/charles-desk/posts/2025/01/15/state-of-ai-business-2025/)
 
 ---
 
-## 🔖 Coming Soon
-
-- AI 에이전트 아키텍처 심층 분석
-- 2025 AI 도구 생태계 지도
-- 기업의 AI 전환 사례 연구
-- 생성형 AI 보안 및 거버넌스 가이드
-
----
-
-[← 메인으로 돌아가기](index.md)
+[← 홈으로 돌아가기](index.md)
