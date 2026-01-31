@@ -1,9 +1,10 @@
 # GitHub Pages 설정
 title: "Charles' Desk"
 description: "AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간. MIT NANDA 보고서, 에이전트 아키텍처, 생성형 AI 분석"
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minima
 
 # 선택 가능한 다른 테마들:
+# theme: jekyll-theme-cayman
 # theme: jekyll-theme-minimal
 # theme: jekyll-theme-slate
 # theme: jekyll-theme-architect
