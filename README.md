@@ -14,7 +14,7 @@ AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유�
 
 #### **Step 1️⃣: 글 작성**
 
-`_templates/post-template.md` 또는 `POSTING-GUIDE.md`를 참고하여 글을 작성합니다.
+`_templates/post-template.md`를 참고하여 글을 작성합니다.
 
 ```markdown
 ---
@@ -65,19 +65,25 @@ git push origin master
 - [ ] 문단이 3~4줄을 넘지 않는가?
 - [ ] 요약 섹션이 있는가?
 
-**더 자세한 가이드:** [POSTING-GUIDE.md](POSTING-GUIDE.md) | [guideline.md](guideline.md)
+**작성 팁:**
+- 한 문단은 3~4줄 이내로 유지
+- 하나의 문단에 하나의 핵심만 포함
+- 리스트로 구조화하여 읽기 쉽게
+- 요약과 다음 단계 섹션은 필수
 
 ---
 
 ## 📂 폴더 구조
 
 ```
-_posts/                          # ← 여기에 글을 저장합니다!
+README.md                         # 이 파일 (글 작성 가이드 포함)
+
+_posts/                           # ← 블로그 글을 여기에 저장합니다!
 ├── 2025-02-01-getting-started.md
 └── 2025-02-15-my-article.md
 
 _templates/
-└── post-template.md             # 글 작성 템플릿
+└── post-template.md             # 글 작성 템플릿 (복사해서 사용)
 
 _layouts/
 ├── default.html                 # 기본 레이아웃
@@ -87,9 +93,7 @@ _includes/
 ├── navigation.html              # 네비게이션 메뉴
 └── footer.html                  # 푸터
 
-guideline.md                      # 작성 가이드라인
-POSTING-GUIDE.md                 # 게시 자동화 설명서
-_config.yml                       # 사이트 설정
+_config.yml                       # 사이트 설정 (수정 불필요)
 ```
 
 ---
@@ -139,11 +143,12 @@ categories: [Translation]   # 번역 자료
 
 ---
 
-## 📚 더 알아보기
+## 📚 글 작성 참고
 
-- **작성 가이드:** [guideline.md](guideline.md) - 작성 원칙과 규칙
-- **게시 가이드:** [POSTING-GUIDE.md](POSTING-GUIDE.md) - 자동 게시 시스템 설명
-- **글 템플릿:** `_templates/post-template.md` - 글 작성 템플릿
+**이 README.md만 봐도 충분합니다!**
+- 글 작성 방법: 위의 "글 작성 & 업로드" 섹션 참고
+- 글 템플릿: `_templates/post-template.md` 복사 후 사용
+- 체크리스트: 위의 "글 작성 체크리스트" 확인
 
 ---
 

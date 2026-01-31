@@ -50,7 +50,6 @@ kramdown:
 include:
   - _includes
   - _layouts
-  - _templates
 
 # 블로그 설정
 collections:
