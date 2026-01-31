@@ -2,130 +2,48 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.date %}
-    <div class="post-meta">
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: "%Y년 %m월 %d일" }}
       </time>
-      {% if page.categories %}
-      <span class="post-categories">
-        {% for category in page.categories %}
-        <span class="category-badge">{{ category }}</span>
-        {% endfor %}
-      </span>
-      {% endif %}
-    </div>
-    {% endif %}
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+      {%- if page.categories.size > 0 -%}
+        •
+        {%- for cat in page.categories -%}
+          <span class="category-badge">{{ cat }}</span>
+          {%- unless forloop.last %} {% endunless -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </p>
   </header>
 
-  <div class="post-content">
+  <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  {% if page.toc %}
-  <aside class="table-of-contents">
-    <h3>목차</h3>
-    <nav>
-      <!-- 자동 생성되는 목차 -->
-    </nav>
-  </aside>
-  {% endif %}
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
 <style>
-  .post {
-    margin-bottom: 3em;
-  }
-
-  .post-header {
-    margin-bottom: 2em;
-    border-bottom: 2px solid #d4d9e0;
-    padding-bottom: 1.5em;
-  }
-
-  .post-title {
-    margin: 0 0 0.5em 0;
-  }
-
-  .post-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.95em;
-    color: #666;
-  }
-
-  .post-date {
-    font-weight: 500;
-  }
-
-  .post-categories {
-    display: flex;
-    gap: 0.5em;
-    flex-wrap: wrap;
-  }
-
   .category-badge {
+    display: inline-block;
     background-color: #f5f7fa;
     border: 1px solid #d4d9e0;
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 0.9em;
     color: #0056b3;
-  }
-
-  .post-content {
-    line-height: 1.85;
-  }
-
-  .post-content h2 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .post-content h3 {
-    margin-top: 1.2em;
-    margin-bottom: 0.4em;
-  }
-
-  .post-content p {
-    margin-bottom: 1.2em;
-  }
-
-  .post-content ul,
-  .post-content ol {
-    margin-bottom: 1.2em;
-  }
-
-  .post-content li {
-    margin-bottom: 0.6em;
-  }
-
-  .table-of-contents {
-    background-color: #f9fafb;
-    border: 1px solid #d4d9e0;
-    border-radius: 6px;
-    padding: 1.5em;
-    margin: 2em 0;
-  }
-
-  .table-of-contents h3 {
-    margin-top: 0;
-    margin-bottom: 1em;
-    color: #0056b3;
-  }
-
-  @media (max-width: 768px) {
-    .post-meta {
-      flex-direction: column;
-      gap: 0.5em;
-    }
-
-    .post-header {
-      padding-bottom: 1em;
-    }
+    margin-right: 4px;
   }
 </style>
