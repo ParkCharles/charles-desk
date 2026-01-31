@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ocean_Business.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B8%B0%EB%B0%98-%ED%95%AD%ED%95%B4-%EC%84%B1%EA%B3%BC%ED%83%84%EC%86%8C-%EA%B4%80%EB%A6%AC-%EC%84%9C%EB%B9%84%EC%8A%A4">데이터 기반 항해 성과·탄소 관리 서비스</h1>
+<hr>
+<h2 id="1-%EC%99%9C-%EC%A7%80%EA%B8%88%EC%9D%B8%EA%B0%80-why-now">1. 왜 지금인가 (Why Now)</h2>
+<ul>
+<li>전 세계 해운업은 <strong>연료비·탄소배출·ESG 규제</strong>로 인해
+“운항 성과를 수치로 설명하고, 개선해야 하는 시대”에 진입</li>
+<li>대한민국은 <strong>2026년 해양수산부 부산 이전 첫해</strong>
+→ 해양 스타트업 지원, 예산, 정책 실험이 집중될 가능성 높음</li>
+<li>하지만 현실은:
+<ul>
+<li>항해 데이터는 흩어져 있고</li>
+<li>보고서는 사후 정리용에 그치며</li>
+<li>“다음 항해에서 무엇을 바꿔야 하는지”를 명확히 알려주는 도구는 거의 없음</li>
+</ul>
+</li>
+</ul>
+<p>👉 <strong>문제는 명확하지만, IT로 제대로 풀린 적이 없음</strong></p>
+<hr>
+<h2 id="2-%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%91%B8%EB%8A%94-%EB%AC%B8%EC%A0%9C-problem">2. 우리가 푸는 문제 (Problem)</h2>
+<h3 id="%EC%8B%A4%EC%A0%9C-%ED%98%84%EC%9E%A5%EC%9D%98-%EB%AC%B8%EC%A0%9C">실제 현장의 문제</h3>
+<ul>
+<li>항해 후 보고서는 있지만 <strong>복기와 개선이 없음</strong></li>
+<li>연료비·지연·탄소 배출의 책임은 개인에게 귀속되지만
+→ 성과를 정량적으로 설명할 도구가 부족</li>
+<li>ESG·탄소 보고는 <strong>시간이 많이 들고</strong>, 경영진 설득도 어려움</li>
+</ul>
+<h3 id="%ED%95%B5%EC%8B%AC-%EC%A7%88%EB%AC%B8">핵심 질문</h3>
+<blockquote>
+<p>“이 항해에서 우리는 돈을 얼마나 더 썼고,<br>
+다음 항해에서는 무엇을 바꾸면 줄일 수 있는가?”</p>
+</blockquote>
+<hr>
+<h2 id="3-%EB%AA%85%ED%99%95%ED%95%9C-%EA%B3%A0%EA%B0%9D-single-buyer-persona">3. 명확한 고객 (Single Buyer Persona)</h2>
+<p><strong>중견 해운사의 운항/용선/선박 관리 책임자</strong>
+(Fleet Manager / Technical Superintendent)</p>
+<p>이 사람은:</p>
+<ul>
+<li>항해 성과에 직접 책임을 지고</li>
+<li>연료비·탄소·지연을 줄이면 바로 <strong>자기 성과</strong></li>
+<li>분기/연말 보고서를 위에 올려야 하는 실무자</li>
+<li>작은 개선(1~3%)도 <strong>즉시 돈이 되는 위치</strong></li>
+</ul>
+<p>👉 처음부터 선주/경영진이 아니라<br>
+👉 <strong>“성과 압박을 받는 실무 책임자”가 첫 고객</strong></p>
+<hr>
+<h2 id="4-%EC%9A%B0%EB%A6%AC%EA%B0%80-%EB%A7%8C%EB%93%9C%EB%8A%94-%ED%95%B4%EA%B2%B0%EC%B1%85-solution">4. 우리가 만드는 해결책 (Solution)</h2>
+<h3 id="%ED%95%B5%EC%8B%AC-%ED%95%9C-%EB%AC%B8%EC%9E%A5">핵심 한 문장</h3>
+<blockquote>
+<p><strong>“지난 항해를 데이터로 복기해서<br>
+다음 항해에서 돈과 리스크를 줄여주는 도구”</strong></p>
+</blockquote>
+<h3 id="%EC%A0%9C%EA%B3%B5-%EA%B0%80%EC%B9%98">제공 가치</h3>
+<ul>
+<li>항해 데이터를 기반으로:
+<ul>
+<li>연료 효율</li>
+<li>지연 요인</li>
+<li>탄소 배출</li>
+</ul>
+</li>
+<li><strong>Before / After 시뮬레이션</strong>
+<ul>
+<li>“이렇게 했으면 % 개선 가능”</li>
+</ul>
+</li>
+<li>결과는:
+<ul>
+<li>대시보드</li>
+<li>분기/반기/연말 보고서(PDF)</li>
+</ul>
+</li>
+</ul>
+<p>👉 데이터 그 자체가 아니라 <strong>의사결정용 요약</strong>이 핵심</p>
+<hr>
+<h2 id="5-mvp-%EC%A0%84%EB%9E%B5-2%EC%9D%B8-%EC%B0%BD%EC%97%85-%ED%98%84%EC%8B%A4-%EA%B8%B0%EC%A4%80">5. MVP 전략 (2인 창업 현실 기준)</h2>
+<h3 id="phase-1--%EC%A6%89%EC%8B%9C-%EB%8F%88-%EB%90%98%EB%8A%94-%EB%AA%A8%EB%8D%B8">Phase 1 — 즉시 돈 되는 모델</h3>
+<p><strong>반자동 분석 + 리포트 제공 (컨설팅 × SaaS)</strong></p>
+<ul>
+<li>입력:
+<ul>
+<li>공개 가능한 과거 항해 데이터</li>
+<li>IMO DCS / EU MRV / 연차보고서</li>
+</ul>
+</li>
+<li>출력:
+<ul>
+<li>항해별 성과 분석</li>
+<li>잠재적 비용 절감 수치</li>
+<li>탄소 배출 및 CII 영향</li>
+</ul>
+</li>
+<li>가격:
+<ul>
+<li>건당 / 월 단위 과금</li>
+<li>초기엔 수작업 + 자동화 혼합</li>
+</ul>
+</li>
+</ul>
+<p>👉 실데이터 연동 없이도 시작 가능<br>
+👉 바로 매출 발생</p>
+<hr>
+<h3 id="phase-2--%EB%B0%98%EB%B3%B5-%EA%B0%80%EB%8A%A5%ED%95%9C-saas">Phase 2 — 반복 가능한 SaaS</h3>
+<ul>
+<li>항해 데이터 업로드</li>
+<li>자동 분석</li>
+<li>보고서 자동 생성</li>
+<li>ESG / 탄소 대응 포맷 제공</li>
+</ul>
+<hr>
+<h3 id="phase-3--%ED%95%B4%EC%9E%90moat">Phase 3 — 해자(Moat)</h3>
+<ul>
+<li>선박 유형별 벤치마크</li>
+<li>업계 평균 대비 위치</li>
+<li>데이터 네트워크 효과</li>
+</ul>
+<hr>
+<h2 id="6-%ED%83%84%EC%86%8Cesg%EB%A5%BC-%EB%8F%88%EC%9D%98-%EC%96%B8%EC%96%B4%EB%A1%9C-%EB%B2%88%EC%97%AD">6. 탄소·ESG를 “돈의 언어”로 번역</h2>
+<ul>
+<li>“탄소를 줄이자” ❌</li>
+<li>“이 항해의 탄소 X톤 = 비용 ○○원” ✅</li>
+<li>“CII 등급 리스크 감소” ✅</li>
+</ul>
+<p>👉 ESG는 <strong>명분</strong>,<br>
+👉 실제 고객이 사는 건 <strong>비용 절감과 리스크 관리</strong></p>
+<hr>
+<h2 id="7-%EC%97%AD%ED%95%A0-%EB%B6%84%EB%B0%B0">7. 역할 분배</h2>
+<h3 id="%ED%95%B4%EC%96%91-%EC%A0%84%EB%AC%B8%EA%B0%80">해양 전문가</h3>
+<ul>
+<li>실제 용선·운항 계약 경험</li>
+<li>현장의 언어와 신뢰</li>
+<li>어떤 데이터가 의미 있는지 알고 있음</li>
+</ul>
+<h3 id="it-%EC%B0%BD%EC%97%85%EA%B0%80">IT 창업가</h3>
+<ul>
+<li>AI·데이터 분석</li>
+<li>자동화된 보고·대시보드</li>
+<li>서비스·SaaS 구조화</li>
+</ul>
+<p>👉 이 두 가지가 <strong>동시에</strong> 있어야만 가능한 사업</p>
+<hr>
+<h2 id="8-%EC%96%BB%EC%9D%84-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83">8. 얻을 수 있는 것</h2>
+<ul>
+<li>단순 중개나 컨설팅이 아닌
+<strong>지속 가능한 제품 회사</strong></li>
+<li>부산을 베이스로 한
+<strong>해양 데이터 SaaS</strong></li>
+<li>향후:
+<ul>
+<li>선사</li>
+<li>금융</li>
+<li>보험</li>
+<li>탄소 시장
+확장 가능성</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="9-%EC%B2%AB-%EC%8B%A4%ED%96%89-%EA%B3%84%ED%9A%8D-1%EA%B0%9C%EC%9B%94">9. 첫 실행 계획 (1개월)</h2>
+<ol>
+<li>실제 항해 사례 1~2건 선정</li>
+<li>공개 데이터 기반 분석 적용</li>
+<li>가짜 대시보드 + PDF 리포트 제작</li>
+<li>기존 네트워크에 무료 1회 분석 제안</li>
+<li>반응 있는 고객부터 유료 전환</li>
+</ol>
+<hr>
+<h2 id="10-%EC%A7%84%EC%A7%9C-%EA%B0%80%EC%B9%98">10. 진짜 가치</h2>
+<blockquote>
+<p><strong>“다음 항해에서,<br>
+당신이 덜 욕먹고,<br>
+덜 손해 보고,<br>
+성과를 설명할 수 있게 해줍니다.”</strong></p>
+</blockquote>
+<hr>
+
+</body>
+</html>

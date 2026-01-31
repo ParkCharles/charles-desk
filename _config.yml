@@ -1,0 +1,12 @@
+# GitHub Pages 설정
+title: 2025 비즈니스 AI 현황 보고서
+description: 기업의 생성형 AI 도입 현황에 대한 종합 보고서
+theme: jekyll-theme-cayman
+
+# 선택 가능한 다른 테마들:
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-slate
+# theme: jekyll-theme-architect
+# theme: jekyll-theme-dinky
+
+lang: ko-KR
