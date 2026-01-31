@@ -3,6 +3,11 @@
 
 @import "minima";
 
+/* Minima 기본 헤더 숨기기 */
+.site-header {
+  display: none !important;
+}
+
 /* 다크모드 비활성화 - 항상 밝은 테마만 사용 */
 :root {
   color-scheme: light only;

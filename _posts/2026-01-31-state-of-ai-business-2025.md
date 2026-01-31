@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2025 비즈니스 AI 현황 보고서"
-date: 2025-01-15
+date: 2026-01-31
 categories: [Reports]
 toc: true
 ---
