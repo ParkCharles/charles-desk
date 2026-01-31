@@ -1,7 +1,6 @@
 # GitHub Pages 설정
 title: "Charles' Desk"
 description: "AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간. MIT NANDA 보고서, 에이전트 아키텍처, 생성형 AI 분석"
-theme: minima
 
 lang: ko-KR
 
@@ -58,8 +57,3 @@ paginate_path: "/blog/page:num/"
 # 언어 및 지역 설정
 date_format: "%Y년 %m월 %d일"
 timezone: Asia/Seoul
-
-# Minima 테마 설정
-minima:
-  skin: classic # auto, classic, dark, solarized, solarized-dark
-  date_format: "%Y년 %m월 %d일"
