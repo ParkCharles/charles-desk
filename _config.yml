@@ -11,9 +11,7 @@ baseurl: "/charles-desk"
 repository: "ParkCharles/charles-desk"
 
 # 작성자 정보
-author:
-  name: Charles
-  email: # 이메일을 추가하려면 여기를 수정하세요
+author: Charles
 
 # 소셜 미디어 및 연락처
 twitter_username: # 트위터 계정을 추가하려면 여기를 수정하세요
