@@ -27,7 +27,7 @@ title: Charles' Desk - AI와 기술 이야기
 
 ## 🔥 Featured: Latest Article
 
-### [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md)
+### [2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)
 
 **MIT Project NANDA와의 협력 연구**
 
@@ -41,7 +41,7 @@ title: Charles' Desk - AI와 기술 이야기
 - 🤖 에이전틱 시스템의 부상
 - 👥 AI의 고용 영향 분석
 
-[📖 전체 보고서 읽기 →](State_of_AI_in_Business_2025_Report.md) | [📊 Reports 섹션 보기](reports.md)
+[📖 전체 보고서 읽기 →](/charles-desk/posts/2025/01/15/state-of-ai-business-2025/) | [📊 Reports 섹션 보기](reports.md)
 
 *출처: MIT Project NANDA | 번역 및 편집: Charles, 2025년 1월*
 

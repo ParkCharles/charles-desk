@@ -136,10 +136,12 @@ categories: [Translation]   # 번역 자료
 | [Curations](curations.md) | 📌 주간 큐레이션, 인사이트 |
 | [About](about.md) | 🤝 프로젝트 및 큐레이터 정보 |
 
-### 주요 콘텐츠
+### 최신 콘텐츠 (블로그)
 
-- [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md) - MIT Project NANDA
-- [Swarm Orchestration Skill](Swarm_Orchestration_Skill.md) - AI 에이전트 조율 기술
+모든 콘텐츠는 `_posts/` 폴더에 자동으로 게시되며, 아래에서 최신 글을 볼 수 있습니다:
+
+- **[2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)** - MIT Project NANDA 연구 분석
+- **[Swarm Orchestration Skill](_posts/2025-01-20-swarm-orchestration-skill.md)** - AI 에이전트 조율 기술 가이드
 
 ---
 

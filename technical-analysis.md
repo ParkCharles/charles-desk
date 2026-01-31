@@ -11,7 +11,7 @@ AI 에이전트, 아키텍처, 기술 스택 등 기술적 주제에 대한 심�
 
 ## 🤖 AI & Agents
 
-### [Swarm Orchestration Skill](Swarm_Orchestration_Skill.md)
+### [Swarm Orchestration Skill - AI 에이전트 조율 기술](_posts/2025-01-20-swarm-orchestration-skill.md)
 
 여러 AI 에이전트를 조율하고 협업하게 하는 스웜 오케스트레이션 기술에 대한 심층 가이드입니다.
 
@@ -21,9 +21,9 @@ AI 에이전트, 아키텍처, 기술 스택 등 기술적 주제에 대한 심�
 - 💬 에이전트 통신 프로토콜
 - ⚡ 성능 최적화 기법
 
-**읽기 시간:** 약 15분 | **페이지:** 532줄
+**읽기 시간:** 약 15분
 
-[📖 전체 내용 읽기 →](Swarm_Orchestration_Skill.md)
+[📖 전체 내용 읽기 →](/charles-desk/posts/2025/01/20/swarm-orchestration-skill/)
 
 ---
 

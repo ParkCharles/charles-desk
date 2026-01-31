@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Swarm Orchestration Skill - AI 에이전트 조율 기술"
+date: 2025-01-20
+categories: [Technical]
+toc: true
+---
+
 # Claude Code 스웜 오케스트레이션 기술 (Swarm Orchestration Skill)
 
 Claude Code의 **TeammateTool과 Task 시스템**을 사용해 **다중 에이전트 협업을 완전히 마스터**하기 위한 가이드입니다.  

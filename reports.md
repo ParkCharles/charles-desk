@@ -11,7 +11,7 @@ title: 📊 Reports - Charles' Desk
 
 ## 📈 Featured Reports
 
-### [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md)
+### [2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)
 
 **MIT Project NANDA**
 
@@ -26,9 +26,9 @@ title: 📊 Reports - Charles' Desk
 
 **출처:** MIT Project NANDA | **번역 및 편집:** Charles, 2025년 1월
 
-**읽기 시간:** 약 30분 | **페이지:** 1,397줄
+**읽기 시간:** 약 30분
 
-[📖 전체 보고서 읽기 →](State_of_AI_in_Business_2025_Report.md)
+[📖 전체 보고서 읽기 →](/charles-desk/posts/2025/01/15/state-of-ai-business-2025/)
 
 ---
 

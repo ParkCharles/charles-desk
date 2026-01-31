@@ -1,3 +1,11 @@
+---
+layout: post
+title: "2025 비즈니스 AI 현황 보고서"
+date: 2025-01-15
+categories: [Reports]
+toc: true
+---
+
 # 생성형 AI의 간극: 2025년 기업 내 AI 현황
 
 **MIT Project NANDA**
