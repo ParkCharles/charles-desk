@@ -1,0 +1,102 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Charles' Desk</h4>
+      <p>AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간입니다.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.md">Home</a></li>
+        <li><a href="reports.md">Reports</a></li>
+        <li><a href="technical-analysis.md">Technical</a></li>
+        <li><a href="curations.md">Curations</a></li>
+        <li><a href="about.md">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/[username]/charles-desk" target="_blank">GitHub Repository</a></li>
+        <li><a href="https://twitter.com/[username]" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Charles' Desk. All content is curated by Charles.</p>
+    <p>Last updated: {{ site.time | date: "%Y년 %m월 %d일" }}</p>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 40px 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.footer-section h4 {
+  margin-top: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.footer-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .site-footer {
+    padding: 20px;
+  }
+}
+</style>

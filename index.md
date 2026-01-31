@@ -13,22 +13,35 @@ title: Charles' Desk - AI와 기술 이야기
 
 ---
 
-## 📰 Latest Articles
+## 🗂️ Content Categories
 
-### 🔥 [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md)
+**관심사별로 콘텐츠를 찾아보세요:**
 
-MIT Project NANDA와 협력하여 제작된 기업의 생성형 AI 도입 현황에 대한 종합 보고서입니다.
+| 카테고리 | 설명 |
+|---------|------|
+| **📊 [Reports & Analysis](reports.md)** | 기업 AI 도입 현황, 시장 분석, 종합 보고서 |
+| **🛠️ [Technical Deep Dives](technical-analysis.md)** | AI 에이전트, 아키텍처, 기술 스택 분석 |
+| **📌 [Curations & Insights](curations.md)** | 주간 큐레이션, 개인 관찰, 인사이트 |
 
-**핵심 질문**: 왜 대부분의 생성형 AI 프로젝트는 파일럿을 넘어서지 못할까?
+---
 
-**다루는 내용**:
-- 📊 생성형 AI 간극(Generative AI Gap)의 실체
-- 🏭 산업별 AI 혁신 성숙도 분석
-- 💡 성공 기업들의 '구매' 전략
+## 🔥 Featured: Latest Article
+
+### [2025 비즈니스 AI 현황 보고서](State_of_AI_in_Business_2025_Report.md)
+
+**MIT Project NANDA와의 협력 연구**
+
+기업들이 생성형 AI에 막대한 투자를 하고 있음에도 불구하고 실질적인 수익을 얻지 못하는 현상을 분석합니다.
+
+**핵심 발견**:
+- 💰 $300-400억 달러 투자 vs 95% 조직의 제로 수익
+- 📊 "생성형 AI 간극(GenAI Divide)" 분석
+- 🏭 산업별 AI 혁신 성숙도 비교
+- 💡 성공 기업들의 전략 연구
 - 🤖 에이전틱 시스템의 부상
-- 👥 AI가 고용에 미치는 실제 영향
+- 👥 AI의 고용 영향 분석
 
-[보고서 전체 읽기 →](State_of_AI_in_Business_2025_Report.md)
+[📖 전체 보고서 읽기 →](State_of_AI_in_Business_2025_Report.md) | [📊 Reports 섹션 보기](reports.md)
 
 *출처: MIT Project NANDA | 번역 및 편집: Charles, 2025년 1월*
 
@@ -37,20 +50,24 @@ MIT Project NANDA와 협력하여 제작된 기업의 생성형 AI 도입 현황
 ## 📬 About This Desk
 
 이 공간에서는:
-- 🌐 해외 AI/Tech 리포트 번역 및 큐레이션
-- 💭 개인적인 관찰과 분석
-- 📊 트렌드 정리 및 인사이트 공유
+- 🌐 **해외 AI/Tech 리포트 번역 및 큐레이션** - 세계 최고의 AI 리서치를 한국어로
+- 💭 **개인적인 관찰과 분석** - 업계 트렌드에 대한 저의 생각
+- 📊 **트렌드 정리 및 인사이트 공유** - 복잡한 내용을 이해하기 쉽게
 
 를 중심으로 콘텐츠를 발행합니다.
 
 ---
 
-## 🔖 Coming Soon
+## 🎯 Who Am I?
 
-- AI 에이전트 아키텍처 심층 분석
-- 2025 AI 도구 생태계 지도
-- 기업의 AI 전환 사례 연구
+저는 AI와 기술 트렌드를 추적하는 데 관심이 많은 큐레이터입니다. 이 공간을 통해 제가 발견한 흥미로운 내용들을 여러분과 공유하고 싶습니다. 각 콘텐츠는 정확성과 명확성을 위해 신중하게 선별되었습니다.
+
+**주요 관심 분야:**
+- 생성형 AI와 에이전트 기술
+- 기업의 AI 도입 전략
+- AI 시스템 아키텍처
+- 기술이 사회에 미치는 영향
 
 ---
 
-**Curated by Charles** | [GitHub](https://github.com/[username]/charles-desk)
+**Curated by Charles** | Updated: 2025년 1월 31일

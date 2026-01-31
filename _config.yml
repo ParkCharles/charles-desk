@@ -1,6 +1,6 @@
 # GitHub Pages 설정
 title: "Charles' Desk"
-description: "내 책상에서 본 AI와 기술 이야기를 여러분과 나눕니다"
+description: "AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간. MIT NANDA 보고서, 에이전트 아키텍처, 생성형 AI 분석"
 theme: jekyll-theme-cayman
 
 # 선택 가능한 다른 테마들:
@@ -12,10 +12,44 @@ theme: jekyll-theme-cayman
 
 lang: ko-KR
 
-# 소셜 미디어
-author: Charles
-twitter_username: # 여기에 트위터 계정 추가 가능
-github_username: # 여기에 GitHub 계정 추가 가능
+# 웹사이트 메타데이터
+url: "https://[username].github.io/charles-desk"
+repository: "[username]/charles-desk"
 
-# SEO
-tagline: AI & Tech Curation by Charles
+# 소셜 미디어 및 연락처
+author: Charles
+twitter_username: # 트위터 계정을 추가하려면 여기를 수정하세요
+github_username: # GitHub 계정을 추가하려면 여기를 수정하세요
+email: # 이메일을 추가하려면 여기를 수정하세요
+
+# SEO 및 메타정보
+tagline: "AI & Tech Curation by Charles"
+keywords: "AI, 기술, 생성형AI, 에이전트, 큐레이션, 분석, 번역"
+
+# Google Analytics (선택사항 - 추가하려면 주석 제거)
+# google_analytics: UA-XXXXXXX-XX
+
+# 사이트맵 및 피드
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 피드 설정
+feed:
+  posts_limit: 10
+
+# 마크다운 처리 설정
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 포함/제외 설정
+include:
+  - _includes
+  - _layouts
+
+# 언어 및 지역 설정
+date_format: "%Y년 %m월 %d일"
+timezone: Asia/Seoul
