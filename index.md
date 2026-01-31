@@ -22,7 +22,7 @@ title: Charles' Desk - AI와 기술 이야기
 
 ## 🔥 Latest
 
-### [2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)
+### [2025 비즈니스 AI 현황 보고서](_posts/2026-01-31-state-of-ai-business-2025.md)
 
 **MIT Project NANDA 연구 분석**
 
@@ -34,7 +34,7 @@ title: Charles' Desk - AI와 기술 이야기
 - 🏭 산업별 AI 혁신 성숙도 비교
 - 💡 성공 기업들의 전략 연구
 
-[📖 전체 보고서 읽기 →](/charles-desk/posts/2025/01/15/state-of-ai-business-2025/)
+[📖 전체 보고서 읽기 →](/charles-desk/posts/2026/01/31/state-of-ai-business-2025/)
 
 ---
 

@@ -1,65 +1,54 @@
 <nav class="main-nav">
-  <div class="nav-container">
-    <div class="nav-header">
-      <h3>📚 Charles' Desk</h3>
-    </div>
-
-    <ul class="nav-menu">
-      <li><a href="{{ site.baseurl }}/" class="nav-link">🏠 Home</a></li>
-      <li><a href="{{ site.baseurl }}/reports" class="nav-link">📊 Reports</a></li>
-      <li><a href="{{ site.baseurl }}/technical-analysis" class="nav-link">💡 Tech Insights</a></li>
-    </ul>
-  </div>
+  <ul class="nav-menu">
+    <li><a href="{{ site.baseurl }}/" class="nav-link">🏠 Home</a></li>
+    <li><a href="{{ site.baseurl }}/reports" class="nav-link">📊 Reports</a></li>
+    <li><a href="{{ site.baseurl }}/technical-analysis" class="nav-link">💡 Tech Insights</a></li>
+  </ul>
 </nav>
 
 <style>
 .main-nav {
-  background: #f5f5f5;
-  border-right: 1px solid #ddd;
-  padding: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
   margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.nav-container {
-  max-width: 300px;
-}
-
-.nav-header h3 {
-  margin: 0 0 15px 0;
-  color: #333;
-  font-size: 18px;
 }
 
 .nav-menu {
   list-style: none;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .nav-menu li {
-  margin: 8px 0;
+  margin: 0;
 }
 
 .nav-link {
-  color: #0366d6;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: #0366d6;
 }
 
-
 @media (max-width: 768px) {
-  .main-nav {
-    margin: 10px 0;
-    padding: 15px;
+  .nav-menu {
+    gap: 12px;
+    padding: 0 15px;
   }
 
-  .nav-container {
-    max-width: 100%;
+  .nav-link {
+    font-size: 14px;
   }
 }
 </style>

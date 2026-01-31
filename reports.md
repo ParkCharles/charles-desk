@@ -11,7 +11,7 @@ title: 📊 Reports
 
 ## 📈 Featured
 
-### [2025 비즈니스 AI 현황 보고서](_posts/2025-01-15-state-of-ai-business-2025.md)
+### [2025 비즈니스 AI 현황 보고서](_posts/2026-01-31-state-of-ai-business-2025.md)
 
 **MIT Project NANDA**
 
@@ -24,7 +24,7 @@ title: 📊 Reports
 - 🤖 에이전틱 시스템의 부상
 - 👥 AI의 고용 영향 분석
 
-[📖 전체 보고서 읽기 →](/charles-desk/posts/2025/01/15/state-of-ai-business-2025/)
+[📖 전체 보고서 읽기 →](/charles-desk/posts/2026/01/31/state-of-ai-business-2025/)
 
 ---
 
