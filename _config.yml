@@ -13,8 +13,8 @@ theme: jekyll-theme-cayman
 lang: ko-KR
 
 # 웹사이트 메타데이터
-url: "https://[username].github.io/charles-desk"
-repository: "[username]/charles-desk"
+url: "https://parkcharles.github.io/charles-desk"
+repository: "ParkCharles/charles-desk"
 
 # 소셜 미디어 및 연락처
 author: Charles
