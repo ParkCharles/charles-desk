@@ -1,7 +1,7 @@
 # GitHub Pages 설정
 title: "Charles' Desk"
 description: "AI와 기술 트렌드에 대한 개인적인 관찰, 번역, 분석을 공유하는 공간. MIT NANDA 보고서, 에이전트 아키텍처, 생성형 AI 분석"
-theme: jekyll-theme-chirpy
+theme: minima
 
 lang: ko-KR
 
@@ -31,8 +31,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-paginate-v2
 
 # 피드 설정
 feed:
@@ -63,24 +61,7 @@ paginate_path: "/blog/page:num/"
 date_format: "%Y년 %m월 %d일"
 timezone: Asia/Seoul
 
-# Chirpy 테마 설정
-theme_mode: light # light, dark, auto
-
-# Archives 설정
-archives:
-  layouts:
-    - archives
-  permalinks:
-    year: /posts/:year/
-    month: /posts/:year/:month/
-    tag: /tags/:name/
-    category: /categories/:name/
-
-# 페이지네이션 (jekyll-paginate-v2 설정)
-pagination:
-  enabled: true
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - Page :num'
-  sort_field: 'date'
-  sort_reverse: true
+# Minima 테마 설정
+minima:
+  skin: classic # auto, classic, dark, solarized, solarized-dark
+  date_format: "%Y년 %m월 %d일"
