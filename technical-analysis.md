@@ -27,20 +27,6 @@ AI 에이전트, 아키텍처, 기술 스택 등 기술적 주제에 대한 심�
 
 ---
 
-## 🌊 Industry & Business
-
-### [Ocean Business Analysis](Ocean_Business.md)
-
-해양 산업과 AI 기술의 교점을 분석한 자료입니다.
-
-- 🌊 해양 산업의 디지털 전환
-- 🤖 AI 활용 사례
-- 📊 비즈니스 영향 분석
-
-[📖 내용 읽기 →](Ocean_Business.md)
-
----
-
 ## 🔖 Coming Soon
 
 - 📚 LLM 아키텍처 비교 분석
