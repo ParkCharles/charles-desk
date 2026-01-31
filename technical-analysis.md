@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 🛠️ Technical
+title: 💡 Tech Insights
 ---
 
-# 🛠️ Technical
+# 💡 Tech Insights
 
 트렌디한 기술 이야기와 깊이 있는 기술 분석을 공유합니다.
 

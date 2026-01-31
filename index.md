@@ -16,7 +16,7 @@ title: Charles' Desk - AI와 기술 이야기
 | | |
 |---|---|
 | **📊 [Reports](reports.md)** | 정성스럽게 작성된 보고서와 심층 분석 |
-| **🛠️ [Technical](technical-analysis.md)** | 트렌디한 기술 이야기와 인사이트 |
+| **💡 [Tech Insights](technical-analysis.md)** | 트렌디한 기술 이야기와 인사이트 |
 
 ---
 
