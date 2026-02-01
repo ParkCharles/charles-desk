@@ -46,24 +46,24 @@ Claude Code의 **TeammateTool과 Task 시스템**을 사용해 **다중 에이�
 
 ## 목차
 
-1. 코어 아키텍처  
-2. 에이전트 생성 방식  
-3. 기본 내장 에이전트 타입  
-4. 플러그인 에이전트 타입  
-5. TeammateTool 동작  
-6. Task 시스템 통합  
-7. 메시지 포맷  
-8. 오케스트레이션 패턴  
-9. 환경 변수  
-10. 백엔드(Spawn Backends)  
-11. 에러 처리  
-12. 전체 워크플로우 예시  [oai_citation:3‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
+1. [코어 아키텍처](#1-코어-아키텍처)
+2. [에이전트 생성 방식](#2-에이전트-생성-방식-두-가지)
+3. [기본 내장 에이전트 타입](#3-기본-내장-에이전트-타입)
+4. [플러그인 에이전트 타입](#4-플러그인-에이전트-타입)
+5. [TeammateTool 기본 동작](#5-teammatetool-기본-동작)
+6. [Task 시스템 통합](#6-task-시스템-통합)
+7. [메시지 포맷](#7-메시지-포맷)
+8. [오케스트레이션 패턴](#8-오케스트레이션-패턴)
+9. [환경 변수](#9-환경-변수)
+10. [백엔드(Spawn Backends)](#10-백엔드spawn-backends)
+11. [오류 및 디버깅](#11-오류-및-디버깅)
+12. [전체 워크플로우 예시](#12-전체-워크플로우-예시)
 
 ---
 
 ## 1. 코어 아키텍처
 
-### 스웜(Swarm)이 작동하는 방식
+### 스웜이 작동하는 방식
 
 스웜은 다음으로 구성됩니다:
 
@@ -126,7 +126,9 @@ Claude Code의 **TeammateTool과 Task 시스템**을 사용해 **다중 에이�
 
 ## 2. 에이전트 생성 방식 (두 가지)
 
-### ① Task Tool (서브 에이전트)
+### 방법 1과 2의 개요
+
+#### ① Task Tool (서브 에이전트)
 
 단기적/포커스된 작업에 사용합니다.
 
@@ -146,9 +148,7 @@ Task({
 * **팀 참여 없음**
 * 빠른 검색/분석/연구에 적합  [oai_citation:5‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
 
----
-
-### ② Task + team_name + name (동료 생성)
+#### ② Task + team_name + name (동료 생성)
 
 동료로 영구 참여시킵니다.
 
@@ -173,9 +173,7 @@ Task({
 * 공유 Task 목록에서 작업 Claim 가능
 * 종료될 때까지 실행  [oai_citation:6‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
 
----
-
-### 주요 차이점
+#### 주요 차이점
 
 | 항목 | Task (서브) | Task + team + name |
 |------|-------------|--------------------|
@@ -189,7 +187,7 @@ Task({
 
 ## 3. 기본 내장 에이전트 타입
 
-### Bash
+### Bash 에이전트
 
 ```js
 Task({
@@ -205,7 +203,7 @@ Task({
 
 ---
 
-### Explore
+### Explore 에이전트
 
 ```js
 Task({
@@ -222,7 +220,7 @@ Task({
 
 ---
 
-### Plan
+### Plan 에이전트
 
 ```js
 Task({
@@ -237,14 +235,14 @@ Task({
 
 ---
 
-### general-purpose
+### general-purpose 에이전트
 
 * 모든 도구 사용 가능
 * 복합 작업 수행에 적합  [oai_citation:11‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
 
 ---
 
-### claude-code-guide
+### claude-code-guide 에이전트
 
 * Claude Code 관련 질문/도움  [oai_citation:12‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
 
@@ -268,7 +266,7 @@ Task({
 
 ## 5. TeammateTool 기본 동작
 
-### spawnTeam (팀 생성)
+### spawnTeam - 팀 생성
 
 ```js
 Teammate({
@@ -286,7 +284,7 @@ Teammate({
 
 ---
 
-### discoverTeams (참여 가능한 팀 조회)
+### discoverTeams - 참여 가능한 팀 조회
 
 ```js
 Teammate({ operation: "discoverTeams" })
@@ -296,7 +294,7 @@ Teammate({ operation: "discoverTeams" })
 
 ---
 
-### requestJoin (팀 참여 요청)
+### requestJoin - 팀 참여 요청
 
 ```js
 Teammate({
@@ -311,7 +309,7 @@ Teammate({
 
 ---
 
-### approveJoin / rejectJoin (참여 승인/거절)
+### approveJoin / rejectJoin - 참여 승인/거절
 
 ```js
 Teammate({
@@ -325,7 +323,7 @@ Teammate({
 
 ---
 
-### write (특정 동료에게 메시지)
+### write - 특정 동료에게 메시지
 
 ```js
 Teammate({
@@ -339,7 +337,7 @@ Teammate({
 
 ---
 
-### broadcast (전체 브로드캐스트)
+### broadcast - 전체 브로드캐스트
 
 ```js
 Teammate({
@@ -397,7 +395,7 @@ TaskUpdate({ taskId: "3", addBlockedBy: ["2"] })
 
 ## 8. 오케스트레이션 패턴
 
-### Pattern 1: 병렬 전문가 리뷰
+### Pattern 1 - 병렬 전문가 리뷰
 
 리더가 여러 전문 리뷰어를 병렬로 스폰:
 
@@ -413,7 +411,7 @@ Task({ team_name:"code-review", name:"security", subagent_type:"compound-enginee
 
 ---
 
-### Pattern 2: 스웜 (Self-Organizing)
+### Pattern 2 - 스웜 (Self-Organizing)
 
 일반 워커들이 공유 작업 큐에서 자체적으로 작업을 Claim:
 
@@ -480,6 +478,8 @@ CLAUDE_CODE_AGENT_TYPE="Explore"
 
 ## 11. 오류 및 디버깅
 
+### 에러 처리
+
 * 워커가 중단되면 5분 후 자동 inactive 처리  
 * 작업은 다시 다른 워커가 Claim 가능  
 * 인박스/TaskList 상태 확인을 통한 디버그  [oai_citation:29‡Gist](https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea?utm_source=chatgpt.com)
@@ -488,7 +488,7 @@ CLAUDE_CODE_AGENT_TYPE="Explore"
 
 ## 12. 전체 워크플로우 예시
 
-### 코드 리뷰 스웜
+### 예시 1 - 코드 리뷰 스웜
 
 ```js
 // Task 생성
@@ -504,7 +504,7 @@ Task({ team_name:"codebase-review", name:"worker-1", subagent_type:"general-purp
 
 ---
 
-## Best Practices (모범 사례)
+## Best Practices - 모범 사례
 
 * 항상 `cleanup`으로 팀 정리  
 * 의미있는 이름 사용  
