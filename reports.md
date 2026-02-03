@@ -11,6 +11,18 @@ title: 📊 Reports
 
 ## 📈 Featured
 
+### [Google Workspace용 Gemini - 프롬프팅 101 가이드](_posts/2026-02-03-gemini-for-google-workspace-prompting-guide.md)
+
+**효과적한 프롬프트 작성을 위한 퀵스타트 핸드북**
+
+- 📝 프롬프트 작성의 4가지 핵심 영역 (페르소나, 태스크, 컨텍스트, 포맷)
+- 👤 직급별 60개+ 실전 프롬프트 예시
+- 💡 Google Workspace 모든 앱 활용법 (Gmail, Docs, Drive, Sheets, Meet, Slides)
+
+[📖 전체 가이드 읽기 →](/charles-desk/posts/2026/02/03/gemini-for-google-workspace-prompting-guide/)
+
+---
+
 ### [2025 비즈니스 AI 현황 보고서](_posts/2026-01-31-state-of-ai-business-2025.md)
 
 **MIT Project NANDA**
